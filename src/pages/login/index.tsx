@@ -5,14 +5,14 @@ import Logo from "../../assets/dkt.png";
 import { themas } from "../../global/themes";
 
 export default function Login() {
-    // Novo estado para controlar a opção selecionada
+    //Controlar a opção selecionada
     const [option, setOption] = useState(""); 
     const [loading, setLoading] = useState(false);
 
     function handleOptionSelect(option: React.SetStateAction<string>) {
         setOption(option);
 
-        // Navegar para o site apropriado
+        // Navegar para o site 
         const url = option === "1" ? "https://api.whatsapp.com/send/?phone=+551621016510&text=Ol%C3%A1%20preciso%20de%20ajuda%20para%20acionar%20meu%20seguro&type=phone_number&app_absent=0" : "https://tosegurado.com.br/cotacao/carro";
         Linking.openURL(url).catch((err) => console.error("Failed to open URL: ", err));
     }
