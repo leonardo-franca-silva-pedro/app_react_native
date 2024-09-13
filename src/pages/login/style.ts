@@ -35,8 +35,8 @@ export const style = StyleSheet.create({
         fontSize:22,
     },
     titleInput:{
-        fontSize:17, // Aumente o tamanho da fonte aqui
-        fontWeight: 'bold', // Mantém o texto em negrito
+        fontSize:17, 
+        fontWeight: 'bold', 
         marginLeft:5,
         color:themas.colors.gray,
         marginTop:50
